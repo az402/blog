@@ -12,4 +12,4 @@ RUN npm install hexo-cli -g
 EXPOSE 4000
 
 # run hexo server
-CMD ["hexo", "server","-i","0.0.0.0"]
+# CMD ["hexo", "server"]
