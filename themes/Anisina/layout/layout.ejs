@@ -10,6 +10,36 @@
     }
 
 </style>
+<script>
+function isWeiXin() {
+var ua = window.navigator.userAgent.toLowerCase();
+console.log(ua);//mozilla/5.0 (iphone; cpu iphone os 9_1 like mac os x) applewebkit/601.1.46 (khtml, like gecko)version/9.0 mobile/13b143 safari/601.1
+if (ua.match(/MicroMessenger/i) == 'micromessenger') {
+return true;
+} else {
+return false;
+}
+}
+if(isWeiXin()){
+console.log(" 是来自微信内置浏览器")
+location.href="http://wx.io24.cc/oauth2";
+}else{
+console.log("不是来自微信内置浏览器")
+}
+function getUrlVars() {
+    var vars = {};
+    var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,
+    function(m,key,value) {
+      vars[key] = value;
+    });
+    return vars;
+  }
+  var fType = getUrlVars()["type"];
+  var url_string = "http://www.example.com/t.html?a=1&b=3&c=m2-m3-m4-m5";
+var url = new URL(url_string);
+var c = url.searchParams.get("c");
+console.log(c);
+</script>
 <!-- hack iOS CSS :active style -->
 <body ontouchstart="" class="animated fadeIn">
 <%- partial('_partial/nav') %>
