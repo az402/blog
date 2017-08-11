@@ -3,7 +3,7 @@ FROM node:boron
 MAINTAINER Steve Zhang "stevzhg@gmail.com"
 
 # prepare work directory
-WORKDIR /blog
+WORKDIR ./
 
 # install hexo
 RUN npm install hexo-cli -g
