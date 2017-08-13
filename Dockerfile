@@ -1,8 +1,8 @@
-FROM node:latest
+FROM node:boron
 
 MAINTAINER Jing Luo "susanna8930@163.com"
 
-RUN sudo npm install hexo-cli -g
+RUN npm install hexo-cli -g
 
 WORKDIR /blog
 
