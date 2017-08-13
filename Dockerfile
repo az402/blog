@@ -4,6 +4,8 @@ MAINTAINER Jing Luo "susanna8930@163.com"
 
 RUN npm install hexo-cli -g
 
+ADD blog /blog
+
 WORKDIR /blog
 
 RUN npm install
