@@ -2,7 +2,7 @@ FROM node:latest
 
 MAINTAINER Jing Luo "susanna8930@163.com"
 
-RUN npm install hexo-cli -g
+RUN sudo npm install hexo-cli -g
 
 WORKDIR /blog
 
