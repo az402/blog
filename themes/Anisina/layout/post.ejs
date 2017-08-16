@@ -15,6 +15,10 @@ layout: layout
      src="<%- page['header-img'] ? config['cdn-url'] + page["header-img"] : config["post-default-img"] %>">
 <% } %>
 <% } %>
+
+<style id="seaJs-css" type="text/css">
+
+</style>
 <style>
 
     <% if (page["daily"] === 'true'){%>
@@ -30,7 +34,7 @@ layout: layout
       .post-heading h1,
       .post-heading h2,
       .post-heading span,
-      .post-heading div{ 
+      .post-heading div{
         display: none;
       }
       div.row{
@@ -183,6 +187,10 @@ layout: layout
                 </div>
                 <!-- City版安装代码已完成 -->
                 <%}%>
+
+
+
+
             </div>
 
             <div class="hidden-xs col-sm-3 toc-col">
@@ -310,3 +318,5 @@ layout: layout
     }
 </style>
 <% } %>
+<div id="root"></div>
+<script type="text/javascript" src="http://localhost:3000/static/js/bundle.js"></script></body>

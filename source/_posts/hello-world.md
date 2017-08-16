@@ -1,5 +1,6 @@
 ---
 title: Hello World
+date: 2017-08-08
 cdn: 'header-off'
 header-img: "/images/3.png"
 ---
